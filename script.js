@@ -592,6 +592,7 @@ const i18n = {
     "hero.lede":
       "Investigadora superior del CONICET en el CIIPME. Estudia cómo los niños pequeños aprenden a hablar, a narrar y a leer en sus hogares, jardines y comunidades.",
     "hero.meta": "Buenos Aires · Argentina",
+    "hero.cv": "Ver CV",
     "portrait.alt": "Retrato de Celia Rosemberg",
     "bio.label": "Biografía",
     "bio.p1":
@@ -682,6 +683,7 @@ const i18n = {
     "lang.aria": "Language / Idioma",
     "hero.eyebrow": "Language · Childhood · Literacy",
     "hero.meta": "Buenos Aires · Argentina",
+    "hero.cv": "View CV",
     "portrait.alt": "Portrait of Celia Rosemberg",
     "bio.p1":
       "PhD from the Facultad de Filosofía y Letras of the Universidad de Buenos Aires (UBA), Licenciada and Profesora in Ciencias de la Educación. She is an Investigadora superior at CONICET and Profesora titular of Metodología de la Investigación at UBA. She works at the Centro Interdisciplinario de Investigaciones en Psicología Matemática y Experimental (CIIPME), based at the CCT CABA Sur.",
