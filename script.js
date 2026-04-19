@@ -591,7 +591,6 @@ const i18n = {
     "hero.eyebrow": "Lenguaje · Infancia · Alfabetización",
     "hero.lede":
       "Investigadora superior del CONICET en el CIIPME. Estudia cómo los niños pequeños aprenden a hablar, a narrar y a leer en sus hogares, jardines y comunidades.",
-    "hero.meta": "Buenos Aires · Argentina",
     "hero.cv": "Ver CV",
     "portrait.alt": "Retrato de Celia Rosemberg",
     "bio.label": "Biografía",
@@ -682,7 +681,6 @@ const i18n = {
     "nav.contact": "Contact",
     "lang.aria": "Language / Idioma",
     "hero.eyebrow": "Language · Childhood · Literacy",
-    "hero.meta": "Buenos Aires · Argentina",
     "hero.cv": "View CV",
     "portrait.alt": "Portrait of Celia Rosemberg",
     "bio.p1":
