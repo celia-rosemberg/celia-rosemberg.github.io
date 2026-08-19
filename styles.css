@@ -69,7 +69,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
   padding: 20px 0;
   background: color-mix(in srgb, var(--bg) 88%, transparent);
   backdrop-filter: blur(10px);
@@ -99,7 +99,8 @@ p {
 .site-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 22px;
+  gap: 10px 12px;
+  min-width: 0;
 }
 
 .site-nav a {
@@ -122,8 +123,21 @@ p {
 .site-header__end {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 14px;
   flex-wrap: wrap;
+}
+
+/* A partir de tablet, el selector de idioma se queda en la misma fila que
+   la navegación. Si falta lugar, wrapean los enlaces entre sí, nunca el
+   selector. Por debajo de 640px el encabezado ya se apila en columna. */
+@media (min-width: 641px) {
+  .site-header__end {
+    flex-wrap: nowrap;
+  }
+
+  .lang-toggle {
+    flex-shrink: 0;
+  }
 }
 
 .lang-toggle {
