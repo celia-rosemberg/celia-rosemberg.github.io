@@ -121,6 +121,40 @@ button:focus-visible {
   font-weight: 700;
 }
 
+/* Enlace al mismo documento en el otro idioma. Es un enlace común,
+   no un botón con JavaScript: cada idioma tiene su propia URL. */
+
+.header-end {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.lang-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition:
+    color 150ms ease,
+    border-color 150ms ease;
+}
+
+.lang-link:hover,
+.lang-link:focus-visible {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
 main {
   padding: 56px 0 8px;
   scroll-margin-top: 24px;

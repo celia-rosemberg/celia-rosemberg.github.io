@@ -658,6 +658,7 @@ const i18n = {
     "nav.transfers": "Transferencias",
     "nav.corpora": "Corpus",
     "nav.project": "Proyecto Alfabetización Familiar",
+    "project.href": "./alfabetizacion-familiar/",
     "projectCallout.text":
       "Iniciativa académica coordinada por Celia Rosemberg y Diego Fernández Meijide para acompañar a familias con niñas y niños de salas de 5 años mediante propuestas de alfabetización compartidas por WhatsApp.",
     "projectCallout.cta": "Conocer el proyecto →",
@@ -751,6 +752,7 @@ const i18n = {
     "nav.transfers": "Resources",
     "nav.corpora": "Corpora",
     "nav.project": "Proyecto Alfabetización Familiar",
+    "project.href": "./alfabetizacion-familiar/en/",
     "projectCallout.text":
       "Academic initiative coordinated by Celia Rosemberg and Diego Fernández Meijide to support families with five-year-old children through literacy activities shared via WhatsApp.",
     "projectCallout.cta": "Learn about the project →",
