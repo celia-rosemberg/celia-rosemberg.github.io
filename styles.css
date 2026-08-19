@@ -203,6 +203,10 @@ main {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
   .view.is-active {
     animation: none;
   }
@@ -298,6 +302,24 @@ h3 {
 
 .hero__actions {
   margin: 20px 0 0;
+}
+
+/* ---------- Bloque destacado del proyecto ---------- */
+
+.project-callout {
+  max-width: 640px;
+}
+
+.project-callout__text {
+  margin: 18px 0 0;
+  max-width: 58ch;
+  font-size: 1.02rem;
+  line-height: 1.8;
+  color: rgba(34, 21, 27, 0.85);
+}
+
+.project-callout__actions {
+  margin: 26px 0 0;
 }
 
 /* ---------- Buttons ---------- */

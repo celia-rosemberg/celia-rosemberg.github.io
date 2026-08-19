@@ -1,0 +1,300 @@
+/* ---------------------------------------------------------------
+   Proyecto Alfabetización Familiar
+   Hoja de estilos de /alfabetizacion-familiar/.
+   Autocontenida a propósito: estas páginas son las que Meta revisa,
+   así que no dependen de la hoja del resto del sitio. Reutiliza la
+   misma paleta y la misma tipografía.
+   --------------------------------------------------------------- */
+
+:root {
+  --bg: #f7f2ec;
+  --paper: #fffaf5;
+  --text: #22151b;
+  --muted: #7a6570;
+  --line: rgba(80, 25, 45, 0.12);
+  --accent: #6a1431;
+  --radius: 16px;
+  --serif: "Cormorant Garamond", Georgia, serif;
+  --sans: "Manrope", system-ui, -apple-system, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ---------- Accesibilidad ---------- */
+
+.skip-link {
+  position: absolute;
+  top: -120px;
+  left: 16px;
+  z-index: 20;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff8f3;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top 150ms ease;
+}
+
+.skip-link:focus {
+  top: 14px;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* ---------- Estructura ---------- */
+
+.shell {
+  width: min(calc(100% - 48px), 760px);
+  margin: 0 auto;
+  padding-bottom: 64px;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 1.25;
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand strong {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.brand span {
+  color: var(--muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.site-nav a {
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  color: var(--accent);
+}
+
+.site-nav a[aria-current="page"] {
+  font-weight: 700;
+}
+
+main {
+  padding: 56px 0 8px;
+  scroll-margin-top: 24px;
+}
+
+/* ---------- Tipografía ---------- */
+
+h1 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(2.1rem, 5vw, 3rem);
+  font-weight: 500;
+  line-height: 1.06;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+h2 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  margin: 28px 0 0;
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+}
+
+p {
+  margin: 16px 0 0;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(34, 21, 27, 0.85);
+}
+
+.lede {
+  margin-top: 18px;
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.updated {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ---------- Secciones ---------- */
+
+section {
+  margin-top: 44px;
+  padding-top: 36px;
+  border-top: 1px solid var(--line);
+}
+
+ul,
+ol {
+  margin: 14px 0 0;
+  padding-left: 1.35rem;
+}
+
+li {
+  margin-top: 9px;
+  line-height: 1.7;
+  color: rgba(34, 21, 27, 0.85);
+}
+
+li::marker {
+  color: var(--muted);
+}
+
+ol li::marker {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+main a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(106, 20, 49, 0.32);
+  transition: border-color 150ms ease;
+}
+
+main a:hover {
+  border-bottom-color: var(--accent);
+}
+
+.note {
+  margin-top: 22px;
+  padding: 20px 24px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+
+.note p {
+  margin: 0;
+}
+
+.note p + p {
+  margin-top: 12px;
+}
+
+/* ---------- Pie ---------- */
+
+.site-footer {
+  margin-top: 56px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.site-footer p {
+  margin: 8px 0 0;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--muted);
+}
+
+.site-footer p:first-child {
+  margin-top: 0;
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.site-footer a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.site-footer a:hover {
+  border-bottom-color: var(--accent);
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 640px) {
+  .shell {
+    width: calc(100% - 28px);
+  }
+
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  main {
+    padding-top: 36px;
+  }
+
+  section {
+    margin-top: 36px;
+    padding-top: 28px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto;
+    transition-duration: 0.01ms;
+  }
+}
