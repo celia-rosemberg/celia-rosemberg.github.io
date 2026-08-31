@@ -123,7 +123,10 @@
           </p>
           <ul>
             <li>WhatsApp number or identifier.</li>
-            <li>Profile name, if WhatsApp provides it.</li>
+            <li>
+              Profile name, if WhatsApp provides it; the project's system does
+              not retain it.
+            </li>
             <li>Date, time and message identifier.</li>
             <li>Internal code for the family, classroom, preschool or activity.</li>
             <li>
@@ -167,7 +170,7 @@
           <p>The system uses or will use:</p>
           <ul>
             <li>Meta and the WhatsApp Cloud API.</li>
-            <li>Render and PostgreSQL.</li>
+            <li>Render, which hosts the application and private PostgreSQL database.</li>
           </ul>
           <p>
             These providers may process information outside Argentina. These
@@ -179,16 +182,24 @@
 
           <h3>Security</h3>
           <p>
-            The system is designed to use private storage, restricted access and
-            separation between identifiers and analysis data.
+            WhatsApp numbers, messages and files are stored encrypted in
+            PostgreSQL. Technical identifiers used to prevent duplicates are
+            stored as irreversible fingerprints. Only authorized team members
+            can generate an authenticated administrative export to organize
+            responses and address requests. That export may include the number,
+            text or caption, dates, message type and file metadata, but not the
+            binary content of voice notes, photographs or documents. The exported
+            file contains readable identifiable data and must be kept with
+            restricted access.
           </p>
 
           <h3>Retention</h3>
           <p>
-            Identifiable original messages and materials will be kept for no
-            longer than 365 days after receipt. They will then be deleted, and
-            only effectively dissociated data may be kept, that is, data that
-            does not allow a person or family to be reasonably identified.
+            Identifiable numbers, messages, original materials and administrative
+            copies will be kept for no longer than 365 days after receipt. They
+            will then be deleted, and only effectively dissociated data may be
+            kept, that is, data that does not allow a person or family to be
+            reasonably identified.
           </p>
 
           <h3>Rights</h3>
@@ -197,7 +208,7 @@
             <li>Ask what identifiable information is kept.</li>
             <li>Request a correction.</li>
             <li>Withdraw their consent.</li>
-            <li>Request the deletion of the materials.</li>
+            <li>Request the deletion of their identifiable data and materials.</li>
           </ul>
           <p>
             To request deletion, see the

@@ -112,7 +112,10 @@
           </p>
           <ul>
             <li>Número o identificador de WhatsApp.</li>
-            <li>Nombre de perfil, si WhatsApp lo proporciona.</li>
+            <li>
+              Nombre de perfil, si WhatsApp lo proporciona; el sistema del
+              proyecto no lo conserva.
+            </li>
             <li>Fecha, hora e identificador del mensaje.</li>
             <li>Código interno de familia, sala, jardín o actividad.</li>
             <li>
@@ -160,7 +163,7 @@
           <p>El sistema utiliza o utilizará:</p>
           <ul>
             <li>Meta y WhatsApp Cloud API.</li>
-            <li>Render y PostgreSQL.</li>
+            <li>Render, que aloja la aplicación y la base PostgreSQL privada.</li>
           </ul>
           <p>
             Estos proveedores pueden procesar información fuera de la Argentina.
@@ -172,17 +175,24 @@
 
           <h3>Seguridad</h3>
           <p>
-            El sistema está diseñado para utilizar almacenamiento privado,
-            accesos restringidos y separación entre los identificadores y los
-            datos de análisis.
+            El número de WhatsApp, los mensajes y los archivos se conservan
+            cifrados en PostgreSQL. Los identificadores técnicos usados para
+            evitar duplicados se guardan como huellas irreversibles. Solo el
+            equipo autorizado puede generar una exportación administrativa
+            autenticada para organizar las respuestas y atender solicitudes.
+            Esa exportación puede incluir el número, texto o epígrafe, fechas,
+            tipo de mensaje y metadatos de archivos, pero no el contenido binario
+            de audios, fotografías o documentos. El archivo exportado contiene
+            datos identificables legibles y debe mantenerse con acceso restringido.
           </p>
 
           <h3>Conservación</h3>
           <p>
-            Los mensajes y materiales originales identificables se conservarán
-            como máximo durante 365 días desde su recepción. Luego serán
-            eliminados y solo podrán conservarse datos efectivamente disociados,
-            que no permitan identificar razonablemente a una persona o familia.
+            Los números, mensajes, materiales originales y copias administrativas
+            identificables se conservarán como máximo durante 365 días desde su
+            recepción. Luego serán eliminados y solo podrán conservarse datos
+            efectivamente disociados, que no permitan identificar razonablemente
+            a una persona o familia.
           </p>
 
           <h3>Derechos</h3>
@@ -191,7 +201,7 @@
             <li>Consultar qué información identificable se conserva.</li>
             <li>Solicitar una corrección.</li>
             <li>Retirar su consentimiento.</li>
-            <li>Pedir la eliminación de los materiales.</li>
+            <li>Pedir la eliminación de sus datos y materiales identificables.</li>
           </ul>
           <p>
             Para pedir la eliminación están las
