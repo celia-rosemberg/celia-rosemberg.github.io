@@ -184,13 +184,14 @@
           <p>
             WhatsApp numbers, messages and files are stored encrypted in
             PostgreSQL. Technical identifiers used to prevent duplicates are
-            stored as irreversible fingerprints. Only authorized team members
-            can generate an authenticated administrative export to organize
-            responses and address requests. That export may include the number,
-            text or caption, dates, message type and file metadata, but not the
-            binary content of voice notes, photographs or documents. The exported
-            file contains readable identifiable data and must be kept with
-            restricted access.
+            stored as irreversible fingerprints. Only authorized team members can
+            generate authenticated administrative exports to organize responses
+            and address requests. The CSV export may include the number, text or
+            caption, dates, message type and file metadata. A separate ZIP export
+            may include readable copies of voice notes, images and documents sent
+            that were stored successfully and have not expired. These exports
+            contain readable identifiable data and must be kept with restricted
+            access.
           </p>
 
           <h3>Retention</h3>
